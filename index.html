@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>KASHE | Digital Solutions</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary-container": "#ff7f50",
+                        "on-primary-container": "#ffffff",
+                        "surface": "#131313",
+                        "surface-bright": "rgba(255,255,255,0.08)",
+                        "surface-container": "rgba(0,0,0,0.6)",
+                        "surface-container-low": "transparent",
+                        "outline-variant": "rgba(255,255,255,0.15)",
+                        "on-surface": "#ffffff",
+                        "on-surface-variant": "#e8ddd5",
+                        "primary": "#ff7f50",
+                        "secondary": "#e8ddd5",
+                    },
+                    spacing: {
+                        "md": "24px", "lg": "48px", "container-max": "1280px",
+                        "sm": "16px", "xs": "4px", "2xl": "120px",
+                        "base": "8px", "xl": "80px", "gutter": "24px"
+                    },
+                    fontSize: {
+                        "headline-xl": ["48px", { lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "700" }],
+                        "headline-lg": ["32px", { lineHeight: "1.3", fontWeight: "700" }],
+                        "headline-sm": ["24px", { lineHeight: "1.4", fontWeight: "500" }],
+                        "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+                        "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+                        "label-caps": ["12px", { lineHeight: "1", letterSpacing: "0.1em", fontWeight: "600" }],
+                        "display-lg": ["72px", { lineHeight: "1.1", letterSpacing: "-0.04em", fontWeight: "700" }],
+                        "display-lg-mobile": ["48px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Background Video -->
+    <video id="hero-video" class="fixed-bg-video" autoplay muted playsinline>
+        <source
+            src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260328_115001_bcdaa3b4-03de-47e7-ad63-ae3e392c32d4.mp4"
+            type="video/mp4">
+    </video>
+    <div class="fixed-dark-overlay"></div>
+
+    <main class="flex flex-col overflow-x-hidden relative z-10">
+
+        <!-- Hero Section -->
+        <section class="hero-centered relative overflow-hidden">
+            <!-- Nav -->
+            <nav class="absolute top-0 left-0 w-full z-20 px-6 py-6">
+                <div class="liquid-glass rounded-full px-6 py-3 flex items-center justify-between max-w-5xl mx-auto">
+                    <a href="#" class="flex items-center hover:opacity-90 transition-opacity">
+                        <svg width="140" height="40" viewBox="0 0 140 40" xmlns="http://www.w3.org/2000/svg">
+                            <text x="70" y="22" text-anchor="middle" font-family="Georgia, serif" font-size="22"
+                                fill="#ffffff" font-weight="700" letter-spacing="0.06em">KASHÈ</text>
+                            <rect x="10" y="27" width="120" height="1.5" fill="#ff7f50" />
+                            <text x="70" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="7"
+                                fill="#a89990" letter-spacing="0.25em">ELEVATING BUSINESS</text>
+                        </svg>
+                    </a>
+                    <div class="flex items-center gap-6">
+                        <a href="#services" class="nav-link">Services</a>
+                        <a href="#about" class="nav-link">About</a>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Hero Content -->
+            <div class="relative z-10 w-full max-w-3xl px-6 flex flex-col items-center justify-center text-center">
+                <div class="glitch-badge">✦ digital solutions provider</div>
+                <h1 class="hero-heading font-instrument" style="font-family:'Instrument Serif',serif;">
+                    yeah i build websites.<br><span class="text-primary">no it won't break.</span>
+                </h1>
+                <p class="hero-sub">
+                    ai shoots • websites • startup kits<br>
+                    <span class="text-white/50">without the agency price tag or the awkward zoom calls</span>
+                </p>
+                <a href="#services"
+                    class="liquid-glass rounded-full px-8 py-3 text-white text-sm font-medium hover:bg-white/10 transition-all inline-flex items-center gap-2 mt-2">
+                    see what i do
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Floating Gen-Z tags -->
+            <div class="float-tag" style="top:20%;left:8%;animation-delay:0s;">no cap 🔥</div>
+            <div class="float-tag" style="top:70%;left:5%;animation-delay:1.5s;">lowkey fire ✨</div>
+            <div class="float-tag" style="top:25%;right:6%;animation-delay:0.8s;">it's giving results 💅</div>
+            <div class="float-tag" style="top:65%;right:8%;animation-delay:2s;">slay the digital space</div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="px-gutter py-2xl" id="services">
+            <div class="max-w-container-max mx-auto">
+                <div class="mb-xl">
+                    <p class="section-eyebrow">what i do</p>
+                    <h2 class="font-headline-lg text-headline-lg glitch-heading">Services</h2>
+                    <div class="w-12 h-1 bg-primary mt-2"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+                    <div class="service-card group">
+                        <span
+                            class="material-symbols-outlined text-primary text-[40px] mb-md block transition-transform group-hover:scale-110">language</span>
+                        <h3 class="font-headline-sm text-headline-sm mb-sm">your business but make it digital</h3>
+                        <p class="font-body-md text-on-surface-variant">modern, responsive websites that actually
+                            convert. no boring templates, no generic vibes.</p>
+                    </div>
+                    <div class="service-card group">
+                        <span
+                            class="material-symbols-outlined text-primary text-[40px] mb-md block transition-transform group-hover:scale-110">photo_camera</span>
+                        <h3 class="font-headline-sm text-headline-sm mb-sm">professional photos. zero drama.</h3>
+                        <p class="font-body-md text-on-surface-variant">ai photo shoots. no camera. no studio. no extra
+                            budget. just results that hit different.</p>
+                    </div>
+                    <div class="service-card group">
+                        <span
+                            class="material-symbols-outlined text-primary text-[40px] mb-md block transition-transform group-hover:scale-110">rocket_launch</span>
+                        <h3 class="font-headline-sm text-headline-sm mb-sm">logo + page + socials. you'll look legit.
+                        </h3>
+                        <p class="font-body-md text-on-surface-variant">startup digital kit. everything you need to go
+                            from idea to online in 3 days. no cap.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="px-gutter py-2xl" id="about">
+            <div class="max-w-container-max mx-auto">
+                <div class="flex flex-col items-center text-center">
+                    <div class="relative mb-lg">
+                        <div class="w-48 h-48 rounded-full border-2 border-primary p-2">
+                            <img alt="Kashe"
+                                class="w-full h-full object-cover rounded-full filter grayscale hover:grayscale-0 transition-all duration-500"
+                                src="ChatGPT Image Jun 7, 2026, 03_29_59 PM.png">
+                        </div>
+                    </div>
+                    <div class="max-w-2xl">
+                        <p class="section-eyebrow">the person behind the screen</p>
+                        <h2 class="font-headline-lg text-headline-lg glitch-heading">About Me</h2>
+                        <p class="font-body-lg text-on-surface-variant leading-relaxed mt-4">
+                            i'm kashe. fresher? yes. boring? absolutely not.<br>
+                            i help small businesses look like they have a whole team behind them.<br>
+                            <span class="text-primary font-medium">spoiler: it's just me and some very good ai
+                                tools.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section class="px-gutter py-2xl border-y border-outline-variant" id="quiz-section">
+            <div class="max-w-2xl mx-auto">
+                <div class="text-center mb-xl">
+                    <p class="section-eyebrow">be honest with yourself</p>
+                    <h2 class="font-headline-lg text-headline-lg glitch-heading">how cooked is your online presence?
+                    </h2>
+                    <p class="font-body-md text-on-surface-variant mt-2">3 questions. 30 seconds. no judgment... maybe a
+                        little.</p>
+                </div>
+                <div class="quiz-card">
+                    <div class="h-1.5 w-full bg-white/10 rounded-full overflow-hidden mb-lg">
+                        <div class="h-full bg-primary transition-all duration-500 ease-in-out rounded-full"
+                            id="quiz-progress" style="width:0%"></div>
+                    </div>
+                    <div class="min-h-[320px] flex flex-col justify-center">
+                        <div class="quiz-step fade-in" id="q1">
+                            <h3 class="font-headline-sm text-white mb-md">does your business have a website rn?</h3>
+                            <div class="flex flex-col gap-sm">
+                                <button class="quiz-btn" onclick="nextStep(1)">yes but it's giving 2012 energy</button>
+                                <button class="quiz-btn" onclick="nextStep(1)">nope, we're invisible online</button>
+                                <button class="quiz-btn" onclick="nextStep(1)">i have an instagram page... does that
+                                    count?</button>
+                            </div>
+                        </div>
+                        <div class="quiz-step hidden" id="q2">
+                            <h3 class="font-headline-sm text-white mb-md">how do customers find out about you?</h3>
+                            <div class="flex flex-col gap-sm">
+                                <button class="quiz-btn" onclick="nextStep(2)">word of mouth (classic but
+                                    risky)</button>
+                                <button class="quiz-btn" onclick="nextStep(2)">whatsapp forwards and instagram
+                                    DMs</button>
+                                <button class="quiz-btn" onclick="nextStep(2)">they don't. we're a mystery.</button>
+                            </div>
+                        </div>
+                        <div class="quiz-step hidden" id="q3">
+                            <h3 class="font-headline-sm text-white mb-md">what's the main issue rn?</h3>
+                            <div class="flex flex-col gap-sm">
+                                <button class="quiz-btn" onclick="nextStep(3)">need more customers online asap</button>
+                                <button class="quiz-btn" onclick="nextStep(3)">want to look pro without spending a
+                                    bag</button>
+                                <button class="quiz-btn" onclick="nextStep(3)">genuinely don't know where to start
+                                    lol</button>
+                            </div>
+                        </div>
+                        <div class="quiz-step hidden text-center" id="results">
+                            <div class="text-5xl mb-md">💀</div>
+                            <p class="font-headline-sm text-white mb-sm">yeah... you need kashe.</p>
+                            <p class="font-body-md text-on-surface-variant mb-lg">the good news? this is literally what
+                                i do. let's fix this.</p>
+                            <a href="#contact"
+                                class="inline-flex items-center gap-2 bg-primary text-white px-lg py-sm rounded-full font-medium hover:opacity-90 transition-all">
+                                okay let's talk 👋
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="px-gutter py-2xl text-center" id="contact">
+            <div class="max-w-container-max mx-auto">
+                <p class="section-eyebrow">don't be shy</p>
+                <h2 class="font-headline-xl text-headline-xl glitch-heading mb-sm">okay you've seen enough.<br>let's
+                    talk.</h2>
+                <p class="text-on-surface-variant mb-lg">slide into my instagram or drop a mail. either works.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-md">
+                    <a class="contact-btn-primary" href="https://www.instagram.com/kashe.digital/">
+                        instagram 📸
+                    </a>
+                    <a class="contact-btn-secondary" href="mailto:kashe.digital@gmail.com">
+                        email ✉️
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full border-t border-outline-variant">
+        <div
+            class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center px-gutter py-lg gap-md">
+            <span class="footer-text">© 2026 kashe. built different.</span>
+            <nav class="flex gap-md">
+                <a class="footer-link" href="#services">services</a>
+                <a class="footer-link" href="#about">about</a>
+                <a class="footer-link" href="#contact">contact</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
