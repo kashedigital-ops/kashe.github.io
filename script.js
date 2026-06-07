@@ -114,3 +114,14 @@ document.addEventListener('DOMContentLoaded', () => {
     video.style.opacity = '0';
     video.play().then(() => fade(1, 500)).catch(() => fade(1, 500));
 });
+// Hamburger menu
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+
+hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+});
+
+function closeMobileMenu() {
+    mobileMenu.classList.add('hidden');
+}
