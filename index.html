@@ -68,24 +68,38 @@
         <section class="hero-centered relative overflow-hidden">
             <!-- Nav -->
             <nav class="absolute top-0 left-0 w-full z-20 px-6 py-6">
-                <div class="liquid-glass rounded-full px-6 py-3 flex items-center justify-between max-w-5xl mx-auto">
-                    <a href="#" class="flex items-center hover:opacity-90 transition-opacity">
-                        <svg width="140" height="40" viewBox="0 0 140 40" xmlns="http://www.w3.org/2000/svg">
-                            <text x="70" y="22" text-anchor="middle" font-family="Georgia, serif" font-size="22"
-                                fill="#ffffff" font-weight="700" letter-spacing="0.06em">KASHÈ</text>
-                            <rect x="10" y="27" width="120" height="1.5" fill="#ff7f50" />
-                            <text x="70" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="7"
-                                fill="#a89990" letter-spacing="0.25em">ELEVATING BUSINESS</text>
-                        </svg>
-                    </a>
-                    <div class="flex items-center gap-6">
-                        <a href="#services" class="nav-link">Services</a>
-                        <a href="#about" class="nav-link">About</a>
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </div>
-                </div>
-            </nav>
-
+    <div class="liquid-glass rounded-full px-6 py-3 flex items-center justify-between max-w-5xl mx-auto">
+        <a href="#" class="flex items-center hover:opacity-90 transition-opacity">
+            <svg width="140" height="40" viewBox="0 0 140 40" xmlns="http://www.w3.org/2000/svg">
+                <text x="70" y="22" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#ffffff" font-weight="700" letter-spacing="0.06em">KASHÈ</text>
+                <rect x="10" y="27" width="120" height="1.5" fill="#ff7f50"/>
+                <text x="70" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="#a89990" letter-spacing="0.25em">ELEVATING BUSINESS</text>
+            </svg>
+        </a>
+        <!-- Desktop links -->
+        <div class="hidden md:flex items-center gap-6">
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <!-- Hamburger -->
+        <button id="hamburger" class="md:hidden text-white p-2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <line x1="3" y1="6" x2="21" y2="6"/>
+                <line x1="3" y1="12" x2="21" y2="12"/>
+                <line x1="3" y1="18" x2="21" y2="18"/>
+            </svg>
+        </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden mt-2 max-w-5xl mx-auto">
+        <div class="liquid-glass rounded-xl px-6 py-4 flex flex-col gap-4">
+            <a href="#services" class="nav-link" onclick="closeMobileMenu()">Services</a>
+            <a href="#about" class="nav-link" onclick="closeMobileMenu()">About</a>
+            <a href="#contact" class="nav-link" onclick="closeMobileMenu()">Contact</a>
+        </div>
+    </div>
+</nav>
             <!-- Hero Content -->
             <div class="relative z-10 w-full max-w-3xl px-6 flex flex-col items-center justify-center text-center">
                 <div class="glitch-badge">✦ digital solutions provider</div>
