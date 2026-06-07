@@ -400,7 +400,7 @@ section {
     .float-tag { display: none; }
 
     /* Nav — hide links, show logo only */
-    .nav-link { display: none; }
+    .nav-link { display: block; font-size: 12px;  }
 
     /* Service cards */
     .service-card { padding: 24px; }
@@ -423,3 +423,6 @@ section {
     /* Footer */
     footer nav { flex-wrap: wrap; justify-content: center; gap: 16px; }
 }
+section { padding-top: 40px !important; padding-bottom: 40px !important; }
+
+.py-2xl { padding-top: 60px !important; padding-bottom: 60px !important; }
