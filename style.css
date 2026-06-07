@@ -388,31 +388,30 @@ section {
     transform: translateY(0);
 }
 /* ===== MOBILE FIXES ===== */
+/* ===== MOBILE FIXES ===== */
 @media (max-width: 768px) {
 
-    /* Hide custom cursor on mobile */
     body { cursor: auto; }
     .custom-cursor, .cursor-trail { display: none; }
 
-    /* Hero */
     .hero-heading { font-size: 32px; }
     .hero-sub { font-size: 15px; }
     .float-tag { display: none; }
 
-    /* Nav — hide links, show logo only */
-    .nav-link { display: block; font-size: 12px;  }
+    /* Keep nav links visible on mobile */
+    .nav-link { display: block; font-size: 11px; }
 
-    /* Service cards */
-    .service-card { padding: 24px; }
+    /* Reduce gaps */
+    section { padding-top: 40px !important; padding-bottom: 40px !important; }
+    .py-2xl { padding-top: 40px !important; padding-bottom: 40px !important; }
+    .mb-xl { margin-bottom: 24px !important; }
 
-    /* Quiz */
-    .quiz-card { padding: 24px; }
+    .service-card { padding: 20px; }
+    .quiz-card { padding: 20px; }
     .quiz-btn { font-size: 14px; padding: 12px 16px; }
 
-    /* About image */
     .w-48 { width: 120px !important; height: 120px !important; }
 
-    /* Contact buttons full width */
     .contact-btn-primary,
     .contact-btn-secondary {
         width: 100%;
@@ -420,9 +419,5 @@ section {
         padding: 14px 20px;
     }
 
-    /* Footer */
     footer nav { flex-wrap: wrap; justify-content: center; gap: 16px; }
 }
-section { padding-top: 40px !important; padding-bottom: 40px !important; }
-
-.py-2xl { padding-top: 60px !important; padding-bottom: 60px !important; }
